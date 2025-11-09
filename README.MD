@@ -61,26 +61,32 @@ The app provides:
 ```bash
 git clone https://github.com/MSanthosh08/plant_disease_detector.git
 cd plant_disease_detector
+```
 
-2️⃣ Create a virtual environment
+### 2️⃣ Create a virtual environment
+```bash
 python -m venv .venv
 source .venv/bin/activate   # For Linux/macOS
+```
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
-
-4️⃣ Run the Streamlit app
+```
+### 4️⃣ Run the Streamlit app
+```bash
 streamlit run app.py
-
-📁 Project Structure
+```
+## 📁 Project Structure
+```bash 
 plant_disease_detector/
 │
 ├── app.py                     # Streamlit main app
 ├── cnn_model.pkl              # Trained CNN model (pickled)
 ├── label_transform.pkl        # Label encoder
 └── README.md                  # Project documentation
-
-🧾 Example Output
+```
+## 🧾 Example Output
 
 After uploading an image:
 
@@ -88,7 +94,7 @@ After uploading an image:
 Confidence: 97.24%
 💡 Suggested Remedy: Apply Mancozeb or chlorothalonil and prune lower leaves.
 
-🧠 Future Enhancements
+## 🧠 Future Enhancements
 
 🌱 Add more crop varieties and diseases
 
@@ -106,7 +112,7 @@ Minor Project — AI-Based Plant Disease Detection
 📧 Contact: [m.santhosh0804@gmail.com]
 🌐 GitHub: https://github.com/MSanthosh08
 
-🪴 Acknowledgments
+## 🪴 Acknowledgments
 
 PlantVillage Dataset
 
