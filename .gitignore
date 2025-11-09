@@ -1,0 +1,12 @@
+.venv
+.jupyter/desktop-workspaces
+model
+model_inspect
+static
+ap.py
+cnn_model.h5
+cnn_model.pkl
+recover_from.py
+recovered_model.h5
+recovered_model.keras
+test_model.py

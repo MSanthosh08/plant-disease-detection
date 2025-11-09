@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Disease Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 0 10px #bbb;
+        }
+        input[type=file] {
+            margin: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        img {
+            width: 250px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 Plant Disease Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <br>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <h3>{{ prediction }}</h3>
+            {% if img_path %}
+                <img src="{{ img_path }}" alt="Uploaded Image">
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
